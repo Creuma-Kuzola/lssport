@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+body{
+    font-family:"Roboto-Regular";
+    overflow-x: hidden;
+}
+
+.red-header{
+    background-color: #ff3946;
+    width: 100vw;
+    height: 6vh;
+    color: #ffff;
+    position: relative;
+}
+
+.p-nav{
+    font-size: 1.5rem;
+    padding-left: 5vh;
+    position: absolute;
+    top: 1.2vh;
+}
+
+.ls-span{
+
+    color: #000;
+}
+
+.ul-nav{
+    position: absolute;
+    top: 1.6vh;
+    left: 30vh;
+    font-size: 1.1rem;
+}
+
+.ul-login-links{
+    position: absolute;
+    top: 1.6vh;
+    right: 0vh;
+    font-size: 1.1rem;
+}
+
+.ul-nav a, .ul-login-links a{
+
+    text-decoration: none;
+    color:#ffff;
+    padding-left: 2vh;
+}
+
+.ul-login-links a{
+
+    padding-right: 2vh;
+    padding-left: 0;
+}
+
+.ul-login-links a:nth-child(2){
+
+    background-color: #ffff;
+    color: #ff3946;
+    width: 5vw;
+    height: 6vh;
+    padding: 2.5vh;
+    font-weight: bold;
+}
+
+.div-header{
+    position: absolute;
+    top: 6vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.div-header .img-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-preto{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0,0.2);
+}
+
+.p-title{
+
+    position: absolute;
+    text-align: center;
+    font-size: 2.5rem;
+    left: 40vh;
+    top:50vh;
+}
+
+.p-subtitle{
+
+    position: absolute;
+    text-align: center;
+    font-size: 1.9rem;
+    left: 57vh;
+    top:57vh;
+    
+}
