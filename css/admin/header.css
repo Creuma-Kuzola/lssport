@@ -1,0 +1,81 @@
+.main-header {
+    box-sizing: content-box;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.main-header--left-part {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.lssport-title {
+    font-size: 3.2rem;
+    font-weight: 100;
+}
+
+.lssport-title .lssport-title--bold-part {
+    font-weight: bold;
+}
+
+.main-header--right-part {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    background-color: #0000000f;
+}
+
+.search-field {
+    width: 30%;
+    height: auto;
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5rem;
+    margin-left: 3.5rem;
+}
+
+.search-field--input {
+    padding: 1rem 1.5rem;
+    border-radius: 3.5rem;
+    border: none;
+    font-size: 1.4rem;
+    width: 100%;
+    border-radius: 5rem;
+    box-sizing: border-box;
+}
+
+.user-div {
+    margin-right: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.user-div--user-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.user-div--user-name {
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+.user-div--drop-down-button {
+    border: none;
+    width: 2.4rem;
+    height: 2.4rem;
+}
