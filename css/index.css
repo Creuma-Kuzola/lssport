@@ -1,3 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+body{
+    font-family:"Roboto-Regular";
+    overflow-x: hidden;
+}
+
 .red-header{
     background-color: #ff3946;
     width: 100vw;
@@ -93,4 +109,73 @@
     left: 57vh;
     top:57vh;
     
+}
+
+.div-o-que-fazemos{
+    margin-top: 3vh;
+    position: relative;
+    top: 100vh;
+}
+
+.p-o-que-fazemos{
+    z-index: 1;
+    font-size: 2.1rem;
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+    /*position: absolute;
+    /*top: 100vh;*/
+}
+
+.box-o-que-fazemos{
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 16vh;
+    gap: 0 60vh;
+    width:100vw;
+}
+
+.box-item-o-que-fazemos{
+    width: 19vw;
+    height:40vh;
+    background-color:#ffff;
+    border-radius: 0.5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 0.15vw solid #eeee;
+}
+
+.box-item-o-que-fazemos:nth-child(2){
+    border: 0.1vw solid #ff3946;
+    position: absolute;
+    top: -3vh;
+}
+
+.div-img-circle{
+    width: 18vh;
+    height: 18vh;
+}
+
+.img-circle{
+    width: 18vh;
+    height: 18vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 3vh;
+    border: 0.25vw solid #ff3946;
+
+}
+
+
+.p-text-box-item{
+
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 1.3rem;
 }
