@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/universal.css">
     <link rel="stylesheet" href="../css/normalize/normalize.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
     <link rel="stylesheet" href="../css/general-settings-to-login-and-sign-up.css">
-    <title>lssport - Login</title>
+    <title>lssport - Cadastro</title>
 </head>
 
 <body>
@@ -32,17 +32,27 @@
                     </div>
 
                     <div class="input-row">
+                        <img src="../icons/entypo_email.svg" alt="" class="icon-field">
+
+                        <input type="email" class="input-field" placeholder="email@gmail.com" name="user-email">
+                    </div>
+
+                    <div class="input-row">
                         <img src="../icons/lock.svg" alt="" class="icon-field">
 
                         <input type="password" class="input-field" placeholder="Password" name="user-password">
                     </div>
 
-                    <a href="#" class="did-you-forgort-the-password">Esqueceu a palavra-passe?</a>
+                    <div class="input-row">
+                        <img src="../icons/lock.svg" alt="" class="icon-field">
 
-                    <input type="button" value="Login" class="login-button">
+                        <input type="password" class="input-field" placeholder="password" name="user-password-confirm">
+                    </div>
+
+                    <input type="button" value="Cadastrar" class="sign-up-button">
                 </form>
 
-                <p class="register">Não tem uma conta? <a href="#" class="register-link">Cadestre-se</a></p>
+                <p class="login">Já tem uma conta? <a href="#" class="login-link">Faça Login</a></p>
             </div>
         </div>
     </div>

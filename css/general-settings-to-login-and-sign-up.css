@@ -1,0 +1,134 @@
+@font-face {
+    font-family: RobotoBold;
+    src: url(../font/Roboto-Bold.ttf);
+}
+
+.main-container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.left-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/outras-img/pexels-mica-asato-1198174\(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-container .content-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.left-container .filter-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0202028a;
+}
+
+.content-space .lssport-title {
+    font-size: 6.4rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    color: #FF3A41;
+}
+
+.lssport-title .bold-area {
+    font-weight: bolder;
+    color: #fff;
+    font-family: RobotoBold;
+}
+
+.lssport-vision-paragraph {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.right-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-25%);
+}
+
+.form {
+    padding: 12.5rem 2.5rem 6rem 2.5rem;
+    border-radius: 1rem;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 48rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
+}
+
+.input-row {
+    margin: 4rem 0;
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.input-row::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #FF3A41;
+    bottom: -1rem;
+}
+
+.icon-field {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.input-field {
+    width: 90%;
+    border: none;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    color: #000000d0;
+    outline: none;
+}
+
+@media screen and (max-width: 765px) {
+    .left-container {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .form-container {
+        margin: 0 auto;
+        left: 0;
+        transform: none;
+        margin-top: 26.5rem;
+    }
+    .left-container {
+        justify-content: center;
+        align-items: flex-start;
+    }
+}

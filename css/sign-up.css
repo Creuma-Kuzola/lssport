@@ -1,4 +1,4 @@
-.login-button {
+.sign-up-button {
     font-family: RobotoBold;
     text-align: center;
     text-decoration: none;
@@ -11,31 +11,25 @@
     margin-top: 5rem;
     cursor: pointer;
 }
-.login-button:hover {
+.sign-up-button:hover {
     background-color: #ff3a40;
 }
-.did-you-forgort-the-password {
-    color: #141414;
-    align-self: flex-end;
-    font-size: 1.6rem;
-    margin: 2rem 0;
-}
-.register {
+.login {
     align-self: center;
     font-size: 1.4rem;
     margin-top: 5.5rem;
     color: #FF3A41;
 }
-.register .register-link {
+.login .login-link {
     font-weight: bolder;
     text-decoration: none;
     color: #FF3A41;
 }
 @media screen and (max-width: 765px){
-    .register {
+    .login {
         color: #fff;
     }
-    .register .register-link {
+    .login .login-link {
         color: #ffffff;
     }
 }
