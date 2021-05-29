@@ -1,0 +1,13 @@
+.main-container {
+    display: flex;
+    overflow: hidden;
+}
+.functionality-panel {
+    box-sizing: content-box;
+    overflow-y: auto;
+    height: 100vh;
+    width: 80%;
+    margin-top: -7.2rem;
+    padding-top: 7.2rem;
+    position: relative;
+}
