@@ -1,0 +1,75 @@
+.users-container {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.users-container--container {
+    width: 28%;
+    position: relative;
+    box-sizing: content-box;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0rem 1.5rem rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 3rem;
+}
+
+.user-profile-img {
+    width: 13.2rem;
+    height: 13.2rem;
+    border-radius: 50%;
+    border: 0.5rem solid #FF3A41;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 2.4rem;
+}
+.user-brief-info {
+    width: 90%;
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-brief-info .user-brief-info--item {
+    width: 50%;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+.action-div {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.action-div .link {
+    margin: 0 0.5rem;
+}
+.action-div--icon {
+    position: relative;
+}
+.action-div--icon::before {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff3a4041;
+}

@@ -12,3 +12,9 @@ body{
     font-family:"Roboto-Regular";
     overflow-x: hidden;
 }
+.bold {
+    font-weight: bolder;
+}
+.normal {
+    font-weight: 100;
+}
