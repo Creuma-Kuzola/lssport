@@ -11,59 +11,116 @@
     <title>lssport - Pagina Principal</title>
 </head>
 <body>
-    <div class="main-container">
-        <section id="last-updates" class="normal-section">
+    <header>
+        <nav class="header-nav-element">
+            <div class="feucan-header-container">
+                <img src="IMG/FEUCAN/120239328_725806741345929_9159541855444131938_n32x32.png" alt="FEUCAN Logo"
+                    class="img-feucan-logo">
+                <h1 class="feucan-title-menu">FEUCAN-IRMAT</h1>
+            </div>
+
+
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-item-link">Inicío</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/cursos" class="nav-menu-item-link">Cursos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/eventos" class="nav-menu-item-link">Eventos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/comissao" class="nav-menu-item-link">Comissão</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-item-link">Historial</a>
+                </li>
+            </ul>
+
+            <i class="fas fa-bars open-mobile-menu mobile-menu-item"></i>
+            <i class="fas fa-times close-mobile-menu mobile-menu-item"></i>
+
+            <ul class="nav-menu-mobile">
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-item-link">Inicío</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/cursos" class="nav-menu-item-link">Cursos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/eventos" class="nav-menu-item-link">Eventos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/comissao" class="nav-menu-item-link">Comissão</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/historial" class="nav-menu-item-link">Historial</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="main-container flex-column-section">
+        <section id="last-updates" class="normal-section flex-column-section">
             <h1 id="last-updates-title" class="heading-1">
                 Últimos<br>Destaques
             </h1>
-            <ul class="modality-list">
-                <li class="modality-item">Futebol</li>
-                <li class="modality-item">Automibilismo</li>
-                <li class="modality-item">Atletismo</li>
+            <ul class="list">
+                <li class="list-item active">Futebol</li>
+                <li class="list-item">Automibilismo</li>
+                <li class="list-item">Atletismo</li>
             </ul>
 
             <section id="updates-container">
-                <div class="update-container">
-                    <img src="" alt="" class="update-img">
-                    <h2 class="update-title"></h2>
+                <div class="updates-container--update flex-column-section">
+                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt="" class="updates-container--update-img">
+                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
                 </div>
 
                 <button class="see-more-updates-button see-more-button">ver mais</button>
             </section>
         </section>
 
-        <section id="updates-by-modality">
+        <section id="updates-by-modality flex-column-section">
             <h1 id="modality-title" class="heading-1">
                 Notícias por<br>Modalidades
             </h1>
             
             <div class="modalities-container">
-                <div class="square-modality-container">
-                    <img src="" alt="" class="modality-icon">
-                </div>
+                <a href="#" class="square-modality-container atletism">
+                    <img src="../icons/fxemoji_running@3x.svg" alt="Atletismo" class="modality-icon">
+                </a>
+                <a href="#" class="square-modality-container soccer">
+                    <img src="../icons/fxemoji_running@3x.svg" alt="Atletismo" class="modality-icon">
+                </a>
+                <a href="#" class="square-modality-container racing">
+                    <img src="../icons/fxemoji_running@3x.svg" alt="Atletismo" class="modality-icon">
+                </a>
             </div>
             
-            <button class="see-more-modalities see-more-button"></button>
+            <button class="see-more-modalities see-more-button">ver mais</button>
         </section>
 
-        <section id="updates-by-modality">
-            <h1 id="modality-title" class="heading-1">
+        <section id="updates-by-highlight">
+            <h1 id="highlight-title" class="heading-1">
                 Destaques mais<br>Acessados
             </h1>
 
-            <ul class="modality-list">
-                <li class="modality-item">Futebol</li>
-                <li class="modality-item">Automibilismo</li>
-                <li class="modality-item">Atletismo</li>
+            <ul class="list">
+                <li class="list-item active">Hoje</li>
+                <li class="list-item">Ontem</li>
+                <li class="list-item">Últimos 7 dias</li>
             </ul>
 
-            <div class="modalities-container">
-                <div class="square-modality-container">
-                    <img src="" alt="" class="modality-icon">
+            <div class="highlights-container">
+                <a class="highlights-items">
+                    <img src="../img/outras-img/pexels-photo-3763871.jpeg" alt="" class="highlights-image">
                     <section class="highlight-text-container">
-                        <p class="highlight-text"></p>
+                        <p class="highlight-text">O menino revelação do basket</p>
                     </section>
-                </div>
+                </a>
             </div>
             
             <button class="see-more-modalities see-more-button">ver mais</button>
