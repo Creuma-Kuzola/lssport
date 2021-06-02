@@ -278,8 +278,73 @@ body{
 .section-formas-de-pagamento-item{
 
     position: absolute;
-    top: 135vh;
+    top: 145vh;
     display: grid;
     grid-template-columns: 3;
     grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    gap: 0 10vh;
+    width: 100vw;
+    height: 40vh;
+}
+
+.section-formas-de-pagamento-item-div{
+
+    width: 25vw;
+    height: 30vh;
+    background-color: #ffff;
+    box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
+    border-radius:1vh;
+}
+
+.section-formas-de-pagamento-item-div:nth-child(2){
+
+    background-color:#FF5C62;
+    color: #ffff;
+
+}
+
+.section-formas-de-pagamento-item-div--img-div{
+
+    width:11vh;
+    height: 11vh;
+    position: relative;
+}   
+
+.section-formas-de-pagamento-item-div--img-div-img{
+    width:11vh;
+    height: 11vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.30vw solid #ff3946;
+    position: absolute;
+    left: 45vh;
+    top: -4vh;
+    
+}
+
+.img-2{
+
+    border: 0.30vw solid #fff;
+}
+
+.section-formas-de-pagamento-item-div--img-div-title{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 9vh;
+    margin-left: 3vh;
+    color:#ff3946 ;
+}
+
+.title-2{
+    color:#fff;
+}
+
+.section-formas-de-pagamento-item-div--img-div-info{
+    margin: 3vh;
+    margin-top: -1vh;
+    text-align: justify;
+
 }
