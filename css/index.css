@@ -114,11 +114,10 @@ body{
 .div-o-que-fazemos{
     margin-top: 3vh;
     position: relative;
-    top: 100vh;
+    top: 103vh;
 }
 
 .p-o-que-fazemos{
-    z-index: 1;
     font-size: 2.1rem;
     color: #000;
     text-align: center;
@@ -128,14 +127,13 @@ body{
 }
 
 .box-o-que-fazemos{
-
     display: grid;
     grid-template-columns: 3;
     grid-auto-flow: column;
     place-items: center;
     justify-content: center;
     position: absolute;
-    top: 16vh;
+    top: 13vh;
     gap: 0 60vh;
     width:100vw;
 }
@@ -172,10 +170,116 @@ body{
 
 }
 
-
 .p-text-box-item{
 
     margin-top: 8vh;
     text-align: center;
     font-size: 1.3rem;
+}
+
+.div-noticias-desportivas{
+
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    height:50vh;
+    grid-auto-flow: column;
+    position: absolute;
+    top: 65vh;
+}
+
+.noticias-desportivas{
+
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    /*width: 60vw;
+    height: 50vh;*/
+    background-color: #ff3946;
+    border-radius: 1vh;
+    margin: 8vh;
+}
+
+.div-desporto{
+
+    margin-left: 10vh;
+}
+
+.esquerda-red-div{
+
+    width: 30vw;
+    height: 50vh;
+}
+
+.esquerda-red-div-p{
+
+    color: #ffff;
+    font-size: 1.9rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: 55vh;
+}
+
+.direito-red-div{
+    width: 30vw;
+    height: 50vh;
+    background-color:#ff3946;
+}
+
+.direito-red-div-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div-p-desporto{
+
+    position: absolute;
+    top: 17vh;
+    
+}
+
+.div-p-desporto p{
+
+    font-size: 1.9rem;
+    font-weight: bolder; 
+    margin-left: 3vh;
+}
+
+.div-p-desporto p:nth-child(1),.div-p-desporto p:nth-child(3),.div-p-desporto p:nth-child(5),.div-p-desporto p:nth-child(7){
+    color: #ff3946;
+}
+
+.btn-cadastrar{
+    border: none;
+    background-color: #ff3946;
+    color: #ffff;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.5rem;
+    border-radius: 0.8vh;
+    position: absolute;
+    top: 30vh;
+    left: 71vw;
+    cursor: pointer;
+}
+
+.section-formas-de-pagamento-p{
+    position: absolute;
+    top: 135vh;
+    font-size: 2.1rem;
+    color: #000;
+    font-weight: bolder;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}
+
+.section-formas-de-pagamento-item{
+
+    position: absolute;
+    top: 135vh;
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
 }
