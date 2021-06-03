@@ -278,7 +278,7 @@ body{
 .section-formas-de-pagamento-item{
 
     position: absolute;
-    top: 145vh;
+    top: 140vh;
     display: grid;
     grid-template-columns: 3;
     grid-auto-flow: column;
@@ -292,7 +292,7 @@ body{
 .section-formas-de-pagamento-item-div{
 
     width: 25vw;
-    height: 30vh;
+    height: 25vh;
     background-color: #ffff;
     box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
     border-radius:1vh;
@@ -333,7 +333,7 @@ body{
     font-size: 1.6rem;
     font-weight: bolder;
     position: absolute;
-    top: 9vh;
+    top: 11vh;
     margin-left: 3vh;
     color:#ff3946 ;
 }
@@ -347,4 +347,108 @@ body{
     margin-top: -1vh;
     text-align: justify;
 
+}
+
+.section-notificacoes{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    justify-content: center;
+    place-items: center;
+    position: absolute;
+    top: 190vh;
+}
+
+.section-notificacoes-ilustration{
+
+    width: 50vw;
+    height: 40vh;
+    position:relative;
+}
+
+.section-notificacoes-ilustration-img{
+
+    object-fit: cover;
+    position: absolute;
+    left: 7vh;
+}
+
+.red-rectangle{
+    width: 40vw;
+    height: 40vh;
+    position: relative;
+    z-index: 2;
+}
+
+.red-rectangle-img{
+
+    position: absolute;
+    top: 7vh;
+    left: -5vh;
+    z-index: 2;
+    width: 35vw;
+}
+
+.red-rectangle-polygon{
+
+    position: absolute;
+    top: 16vh;
+    left: -8vh;
+    z-index: 1;
+}
+
+.red-rectangle-title{
+
+    position: absolute;
+    top: 10vh;
+    font-size: 1.5rem;
+    z-index: 3;
+    text-align: center;
+    margin: 2vh;
+}
+
+.red-rectangle-title-entregamos{
+
+    position: absolute;
+    top: 30vh;
+    font-size: 1.5rem;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    width: 30vw;
+}
+
+.div-btn{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 45vh;
+    gap: 0 10vh;
+}
+
+.btn-imediata, .btn-sumaria{
+
+    border: none;
+    width: 10vw;
+    height: 7vh;
+    font-size: 1.4rem;
+    border-radius: 1vh;
+    cursor: pointer;
+   
+}
+
+.btn-imediata{
+
+    background-color: #000;
+    color: #fff;
+   
+}
+
+.btn-sumaria{
+    border: 0.30vw solid #000;
+    box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
 }
