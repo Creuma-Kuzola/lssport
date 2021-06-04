@@ -3,17 +3,71 @@
     src: url(../font/Roboto-Bold.ttf);
 }
 
-.main-container {
-
+.header-nav-element {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    padding: 0 2rem;
+    background-color: #FF3A41;
+    z-index: 10;
+    box-sizing: content-box;
+    top: 0;
 }
 
+.main-container {
+    margin-top: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lssport-title {
+    color: #111111;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    position: absolute;
+
+}
+.text-white-color {
+    color: #fff;
+}
+.menu-mobile {
+    display: none;
+}
+
+.menu-list {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: 5%;
+    list-style: none;
+}
+.menu-list .menu-link {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+}
+
+.menu-link:hover {
+    background-color: #ffffff48;
+}
 .last-updates {
+
 }
 
 .heading-1 {
     font-size: 3.2rem;
     font-family: RobotoBold, Arial, Helvetica, sans-serif;
-    margin: 5rem 0 2rem 0;
+    margin: 7.5rem 0 2rem 0;
 }
 
 .list {
@@ -36,18 +90,21 @@
     font-size: 2.2rem;
 }
 
-.updates-container {
+
+#updates-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .updates-container--update {
     margin: 5rem 2.5rem 5rem 0;
     position: relative;
+    width: 30%;
 }
 
 .updates-container--update-img {
-    width: 25%;
+    width: 100%;
     height: 32rem;
     border-radius: 2rem;
     margin-bottom: 2.5rem;
@@ -56,6 +113,7 @@
 
 .updates-container--update-title {
     font-size: 2.6rem;
+    word-wrap: normal;
 }
 
 .see-more-button {
@@ -135,7 +193,7 @@
     width: 100%;
 }
 .highlights-image {
-    width: 100%;
+    width: 30%;
     height: 31rem;
     border-radius: 2rem;
 }
@@ -159,11 +217,14 @@
 }
 
 @media screen and (max-width: 765px) {
+    .menu-list {
+        display: none;
+    }
     .updates-container--update-img {
         width: 100%;
     }
     .main-container {
-        width: 95%;
+        width: 90%;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -175,5 +236,80 @@
     .flex-column-section {
         flex-direction: column;
     }
+    .menu-hamburguer {
+        position: absolute;
+        left: 1rem;
+        background-color: #FF3A41;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 2.5rem;
+        height: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+    }
+    .menu-hamburguer .menu-hamburguer-line {
+        position: relative;
+        width: 100%;
+        height: 0.2rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        transition: 0.5s;
+        position: absolute;
+    }
+    .menu-hamburguer-line:nth-child(1) {
+        top: 0%;
+    }
 
+    .menu-hamburguer-line:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menu-hamburguer-line:nth-child(3) {
+        top: 100%;
+    }
+    .menu-mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        background-color: #ffffff;
+        list-style: none;
+        border-bottom: 0.1rem solid hsla(0, 0%, 0%, 0.114);
+        margin: 0;
+        top: -100%;
+        left: 0;
+        transition: 0.5s;
+        z-index: -2;
+    }
+    .menu-link {
+        padding: 1rem 0;
+        text-decoration: none;
+        background-color: #fff;
+        color: #111111;
+        position: relative;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .menu-item {
+        padding: 1rem 0;
+        position: relative;
+        background-color: #fff;
+    }
+    .menu-link[href="#"] .menu-item::after {
+        content: "";
+        position: absolute;
+        height: 0.2rem;
+        width: 40%;
+        background-color: #FF3A41;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        border-radius: 10rem;
+    }
+    .highlights-items {
+        position: relative;
+        width: 100%;
+    }
 }
