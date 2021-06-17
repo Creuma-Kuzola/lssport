@@ -1,0 +1,61 @@
+.btn-criar-evento {
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #00a32b;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 42px 70px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.event-container {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+.event-container--container {
+  width: 28%;
+  position: relative;
+  box-sizing: content-box;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0rem 1.5rem rgba(0, 0, 0, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem 3rem;
+  flex-direction: column;
+}
+
+.action-div {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-img {
+  box-shadow: -20px 20px rgb(255, 58, 65, 50%);
+  border-radius: 5px;
+  width: 262px;
+  height: 180px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-info {
+  padding-top: 30px;
+}
