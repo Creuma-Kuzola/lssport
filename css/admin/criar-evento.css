@@ -1,0 +1,96 @@
+.btn-cancelar-evento {
+  text-decoration: none;
+  margin-top: 50px;
+  margin-right: 50px;
+  cursor: pointer;
+  float: right;
+}
+
+.div-info-event {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titulo {
+  width: 578px;
+  height: 45px;
+  padding-left: 10px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+#descricao {
+  width: 578px;
+  height: 485px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  resize: none;
+}
+
+.div-select {
+  margin-left: -170px;
+  margin-bottom: 20px;
+}
+
+.div-select select {
+  width: 206px;
+  height: 45px;
+  font-size: 17px;
+  color: black;
+  background-color: white;
+}
+
+.btn-carregar-evento {
+  display: block;
+  background-color: #00a32b;
+  color: white;
+  width: 206px;
+  height: 47px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 50px;
+  font-size: 17px;
+}
+
+.div-img-event {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-alterar-img {
+  display: block;
+  background-color: #FFB72B;
+  color: white;
+  width: 206px;
+  height: 47px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 0px;
+  font-size: 17px;
+}
+
+.event-container {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-y: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+}
