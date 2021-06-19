@@ -26,14 +26,10 @@ const paymentsRates = [
 
 for (let i = 0; i < editPayments.length; i++) {
     editPayments[i].addEventListener('click', (event) => {
-        paymentName.setValue(paymentsRates[i].paymentName);
-        paymentName.setValue(paymentsRates[i].price);
-
-        alert("Entrou");
+        paymentName.value = paymentsRates[i].paymentName;
+        paymentPrice.value = paymentsRates[i].price;
 
         if (flagHidden == true) {
-            alert("Entrou1");
-            
             blackBackground.style.display = 'block';
             blackBackground.style.opacity = '1';
 
@@ -47,7 +43,7 @@ for (let i = 0; i < editPayments.length; i++) {
     });
 
 }
-closeItemForm.onClick = (event) => {
+closeItemForm.addEventListener('click', (event) => {
     blackBackground.style.opacity = '0';
     form.style.opacity = '0';
 
@@ -57,4 +53,4 @@ closeItemForm.onClick = (event) => {
     }, 600);
 
     flagHidden = true
-}
+})

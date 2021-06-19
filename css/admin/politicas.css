@@ -331,7 +331,7 @@
     background-color: #00000096;
     z-index: 2;
     display: none;
-    transition: 1s;
+    transition: 0.5s;
     opacity: 0;
 }
 .politic-detail-form {
@@ -346,6 +346,7 @@
     position: relative;
     width: 35%;
     display: none;
+    transition: 1s;
 }
 .add-new-politic {
     display: flex;
