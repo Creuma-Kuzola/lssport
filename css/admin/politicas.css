@@ -1,0 +1,458 @@
+.income-info-container {
+    margin-left: 0 !important;
+}
+
+.incomes-div-container {
+    width: 90%;
+    position: relative;
+    overflow-x: auto;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.income-info-container {
+    width: 75rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    border-radius: 0.5rem;
+    border: 0.1rem #0000003b solid;
+    position: relative;
+    margin: 0 2.5rem;
+    overflow-x: auto;
+}
+.edit-payment {
+    cursor: pointer;
+}
+
+.porcentage-info-of-income {
+    position: absolute;
+    left: 2.5%;
+    top: 2.5%;
+    font-size: 4.8rem;
+    color: #444;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.income-container-symbol {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+}
+
+.income-symbol {
+    width: 3.2rem;
+    height: 3.2rem;
+    z-index: 1;
+}
+
+.income-container-symbol::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 65%;
+    background-color: #FFA048;
+    border-radius: 50%;
+}
+
+.income-container-symbol::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background-color: #ffa0483b;
+    border-radius: 50%;
+}
+
+.orange-symbol-container::after {
+    background-color: #FFA048;
+}
+
+.orange-symbol-container::before {
+    background-color: #ffa0483b;
+}
+
+.green-symbol-container::after {
+    background-color: #00A32B;
+}
+
+.green-symbol-container::before {
+    background-color: #00A32B3b;
+}
+
+.blue-symbol-container::after {
+    background-color: #00B1FF;
+}
+
+.blue-symbol-container::before {
+    background-color: #00B1FF3b;
+}
+
+.title-of-income {
+    font-size: 2.4rem;
+    margin: 0.5rem 0;
+}
+
+.income-quant {
+    font-size: 3.2rem;
+    font-weight: bolder;
+    margin: 0;
+    color: #444;
+}
+
+.users-info {
+    font-size: 2.4rem;
+    margin: 0.5rem 0;
+    color: #000;
+}
+
+.bottom-content {
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    flex-direction: column;
+}
+
+.bottom-controller {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.politic-edit-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.add-new-politic-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.form-input {
+    border-radius: 0.5rem;
+    border: 0.1rem #00000023 solid;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+
+.add-new-politic {
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 35%;
+    text-align: center;
+    background-color: #00a32b9a;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.add-new-politic-form .add-new-politic {
+    width: 40%;
+}
+.add-icon-politic-form {
+    margin-right: 1rem;
+}
+
+.add-new-politic:hover {
+    background-color: #00a32b;
+}
+
+.existent-payments-polict {
+    display: flex;
+    flex-direction: column;
+}
+
+.ways-to-pay-label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.existent-ways-to-pay-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 1rem;
+}
+
+.payment-way-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.09);
+    border-radius: 0.5rem;
+    border: 0.1rem solid #00000017;
+    margin: 1rem 0;
+}
+
+.payment-name {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+.payment-controller-way {
+    margin-right: 1rem;
+    display: flex;
+}
+
+.option-payment {
+    margin: 0 1rem;
+}
+
+.last-payments-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid #00000071;
+    border-radius: 0.5rem;
+    margin-right: 2%;
+}
+
+.payment-logs-title {
+    margin: 1rem 0 2rem 4%;
+    font-size: 2.2rem;
+}
+
+.payment-log {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.payment-log-data {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-important-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.photo-container-and-user-name {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.user-photo-profile {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.2rem solid #FF3A41;
+    margin: 1rem 0;
+}
+
+.user-name {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+.payment-detail-amout-and-type {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.payment-detail-amout-and-type .income-container-symbol {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    margin-left: 1.5rem;
+}
+
+.payment-detail-amout-and-type .income-container-symbol .income-symbol {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.payment-amount {
+    font-size: 2rem;
+}
+
+.payment-log-data {
+    margin-left: auto;
+    align-items: center;
+}
+
+.payment-date {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+}
+
+.logs-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+    height: 40rem;
+}
+
+.black-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000096;
+    z-index: 2;
+    display: none;
+    transition: 1s;
+    opacity: 0;
+}
+.politic-detail-form {
+    padding: 5rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    width: 35%;
+    display: none;
+}
+.add-new-politic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    position: relative;
+}
+.row .form-input {
+    width: 95%;
+    margin: 1rem 0;
+}
+.row:nth-child(2){
+    margin-top: 2rem;
+}
+.row:nth-child(3) {
+    margin-top: 1rem;
+}
+.row:nth-child(3) > input:nth-child(2) {
+    width: 50%;
+}
+.close-item {
+    object-fit: cover;
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.close-item:hover {
+    transform: rotate(360deg);
+} 
+
+.label-form {
+    font-size: 1.4rem;
+}
+
+.orange {
+    color: #FFA048;
+}
+
+.green {
+    color: #00A32B;
+}
+
+.blue {
+    color: #00B1FF;
+}
+
+.white {
+    color: #fff;
+}
+
+.back-ground-orange {
+    background-color: #FFA048;
+}
+
+.back-ground-green {
+    background-color: #00A32B;
+}
+
+.back-ground-blue {
+    background-color: #00B1FF;
+}
+
+.back-ground-orange:hover {
+    background-color: #FFA048;
+}
+
+.back-ground-green:hover {
+    background-color: #00A32B;
+}
+
+.back-ground-blue:hover {
+    background-color: #00B1FF;
+}
+
+/*
+
+<div class="top-bar-buttons">
+    <button class="see-more-options">
+        Mais Sobre
+    </button>
+</div>
+                
+                */
+.top-bar-buttons {
+    margin-bottom: 2.5rem;
+}
+.see-more-options {
+    padding: 1rem 2rem;
+    border: 0.1rem solid #00A32B;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #00A32B;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+.see-more-options:hover {
+    background-color: #00A32B;
+    color: #fff;
+}
