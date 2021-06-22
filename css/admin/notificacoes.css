@@ -1,0 +1,26 @@
+.centro-de-notif {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+   
+}
+.centro-de-notif img{
+    -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(340deg);
+  margin-left: 80px;
+}
+
+.total-notif{
+    color: #00B1FF;
+    margin-right: 90px;
+    margin-top: 50px;
+
+}
+
+
+.not-titulo{
+    font-size: 36px;
+    margin-left: -550px;
+    margin-top: 50px;
+}
+
