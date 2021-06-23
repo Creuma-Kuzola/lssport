@@ -69,7 +69,7 @@
 }
 
 .div-esquerda{
-    padding: 40px;
+    padding-left: 40px;
     width: 50%;
     height: 546px;
 }
@@ -88,6 +88,49 @@
     font-size: 18px;
     border-radius: 5px;
     border: 1px solid #BDBABA;
+
+}
+
+.div-notf{
+    margin-top: 10px;
+    height: 340px;
+    width: 667px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+
+}
+
+.notf-type {
+    display: flex;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.imediata{
+    color: white;
+    background-color: #00b1ff;
+    height: 80px;
+    width: 188px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+
+}
+.sumario{
+    color: white;
+    background-color: #ffaf61;
+    height: 80px;
+    width: 188px;
+    border-radius: 5px;
+    margin-left:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+
 
 }
 
