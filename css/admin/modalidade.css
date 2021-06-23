@@ -1,0 +1,151 @@
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.functionality-panel h1 {
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.div-modalidades ul {
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+}
+
+.mod-icon :hover {
+  opacity: 0.3;
+}
+
+.mod-icon {
+  height: 111px;
+  width: 111px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+span {
+  margin-left: 30px;
+}
+
+ul img {
+  height: 64px;
+  width: 64px;
+}
+
+.div-modalidades {
+  float: left;
+  width: 60%;
+}
+
+.div-info-modalidade {
+  float: right;
+  width: 40%;
+  margin-top: 60px;
+}
+
+.div-img {
+  border: 1px solid #ccc;
+  border-color: #000;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.div-img img {
+  height: 128px;
+  width: 128px;
+  padding: 32px;
+}
+
+.mod-titulo {
+  height: 47px;
+  width: 398px;
+  border: 1px solid #ccc;
+  border-color: #000;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.mod-titulo p {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+label {
+  font-size: 18px;
+}
+.mod-descricao {
+  height: 85px;
+  width: 398px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.mod-descricao p {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.input-mod {
+  height: 47px;
+  width: 238px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.div-crir-modalidade {
+  margin-top: 10px;
+}
+
+.mod-criadas {
+  padding-top: 15px;
+  margin-top: 30px;
+  width: 419px;
+  height: 200px;
+  /*#d4d4d4;*/
+  border-top: 1px solid #000000;
+}
+
+.element {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.element div {
+  margin-bottom: 12px;
+  width: 352px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.element button {
+  margin-top: -12px;
+}
+
+.btn-criar-modalidade {
+  width: 133px;
+  height: 47px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #00a32b;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 22px;
+}
