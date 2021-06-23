@@ -69,9 +69,26 @@
 }
 
 .div-esquerda{
-    
+    padding: 40px;
     width: 50%;
     height: 546px;
+}
+
+.div-esquerda input {
+    height: 37px;
+    width: 345px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #1D1D1D;
+}
+
+.div-esquerda select {
+    height: 37px;
+    width: 176px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #BDBABA;
+
 }
 
 
