@@ -85,10 +85,7 @@ body{
     top: 50vh;
 }
 
-.btn-login{
-
-    background-color: #ffff;
-    color: #ff3946;
+.btn-login, .btn-cadastrar{    
     width: 11vw;
     height:5vh;
     padding: 2vh;
@@ -96,25 +93,63 @@ body{
     text-decoration: none;
     border-radius: 0.2vh;
     box-shadow: 0px 3px 0.5vh rgba(0,0,0,0.5);
-    border-radius: 0.7vh;
+    border-radius: 1vh;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     padding-top: 1.5vh;
 }
 
-.btn-cadastrar{
+.btn-login{
+    background-color: #ffff;
+    color: #ff3946;
+}
 
-    text-decoration: none;
+.btn-cadastrar{
     background-color: #ff3946;
     color: #fff;
-    width:11vw;
-    height: 5vh;
-    padding: 2vh;
-    border-radius: 0.7vh;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0px 3px 0.5vh rgba(0,0,0,0.5);
-    padding-top: 1.5vh;
+}
+
+@media screen and (max-width: 765px){
+    
+   .main-div{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    width: 100vw;
+    }
+
+    .left-div{
+        width: 100vw;
+    }
+
+    .left-div-img-container{
+        width: 100vw;
+    }
+
+    .p-div{
+        position: absolute;
+        top: 50vh;
+        left: 40vw;
+    }
+
+    .left-div-p{
+      display: none;
+    }
+
+    .rigth-div{
+        width: 0;
+        height:0;
+    }
+
+    .btns{
+      position: absolute;
+      top:0;
+      top: 85vh;
+    }
+
+    .btn-login,.btn-cadastrar{
+        width:50vw;
+    }
+
 }
