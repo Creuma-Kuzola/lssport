@@ -33,6 +33,7 @@
 .text-white-color {
     color: #fff;
 }
+
 .menu-mobile {
     display: none;
 }
@@ -151,7 +152,6 @@
     background-color: #FF3A41;
     color: #fff;
     border: none;
-
 }
 
 .flex-column-section {

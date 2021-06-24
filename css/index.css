@@ -14,14 +14,6 @@ body{
     overflow-x: hidden;
 }
 
-.red-header{
-    background-color: #ff3946;
-    width: 100vw;
-    height: 6vh;
-    color: #ffff;
-    position: relative;
-}
-
 .p-nav{
     font-size: 1.5rem;
     padding-left: 5vh;
@@ -30,21 +22,13 @@ body{
 }
 
 .ls-span{
-
     color: #000;
-}
-
-.ul-nav{
-    position: absolute;
-    top: 1.6vh;
-    left: 30vh;
-    font-size: 1.1rem;
 }
 
 .ul-login-links{
     position: absolute;
-    top: 1.6vh;
-    right: 0vh;
+    top: 2.2vh;
+    right: 3.3vw;
     font-size: 1.1rem;
 }
 
@@ -66,8 +50,66 @@ body{
     background-color: #ffff;
     color: #ff3946;
     width: 5vw;
-    height: 6vh;
+    height: 7vh;
     padding: 2.5vh;
+    font-weight: bold;
+}
+
+
+.header-nav-element {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+    padding: 0 2rem;
+    background-color: #ff3946;
+    z-index: 10;
+    box-sizing: content-box;
+    top: 0;
+}
+
+.main-container {
+    margin-top: 1rem;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.lssport-title {
+    color: #111111;
+    font-size: 2rem;
+    position: absolute;
+    left: 10vh;
+    top: 1vh;
+    margin: 0;
+}
+.text-white-color {
+    color: #fff;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-list {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    margin-left: auto;
+    list-style: none;
+    position: absolute;
+    left: 30vh;
+}
+.menu-list .menu-link {
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.menu-link:nth-child(1){
     font-weight: bold;
 }
 
@@ -99,22 +141,25 @@ body{
     font-size: 2.5rem;
     left: 40vh;
     top:50vh;
+    color: #fff;
+    transition: 1s;
 }
 
 .p-subtitle{
 
     position: absolute;
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     left: 57vh;
     top:57vh;
-    
+    color: #fff;
+    transition: 2s;
 }
 
 #div-o-que-fazemos{
     margin-top: 3vh;
     position: relative;
-    top: 103vh;
+    top: 113vh;
 }
 
 .p-o-que-fazemos{
@@ -122,8 +167,6 @@ body{
     color: #000;
     text-align: center;
     font-weight: bolder;
-    /*position: absolute;
-    /*top: 100vh;*/
 }
 
 .box-o-que-fazemos{
@@ -184,7 +227,7 @@ body{
     height:50vh;
     grid-auto-flow: column;
     position: absolute;
-    top: 65vh;
+    top: 100vh;
 }
 
 .noticias-desportivas{
@@ -604,3 +647,416 @@ body{
     width: 100vw;
     font-size: 1.4rem;
 }
+
+@media screen and (max-width: 765px){
+    
+    .lssport-title {
+        color: #111111;
+        font-size: 1.7rem;
+        position: absolute;
+        left: 10vh;
+        top: 2vh;
+        margin: 0;
+    }
+
+    .ul-login-links{
+        position: absolute;
+        top: 2.2vh;
+        right:8.5vw;
+        font-size: 1.1rem;
+    }
+
+    .p-title{
+        font-size: 1.5rem;
+        left: 6vw;
+        top:50vh;
+        font-weight: bolder;
+    }
+
+    .p-subtitle{
+        font-size: 1.2rem;
+        left: 15vw;
+        top:55vh;
+    }
+
+    .menu-list {
+        display: none;
+    }
+    .updates-container--update-img {
+        width: 10%;
+    }
+    .main-container {
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .updates-container--update {
+        margin: 5rem 0rem 0rem 0;
+        position: relative;
+    }
+    .flex-column-section {
+        flex-direction: column;
+    }
+    .menu-hamburguer {
+        position: absolute;
+        left: 1rem;
+        background-color: #FF3A41;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 2.5rem;
+        height: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+    }
+    .menu-hamburguer .menu-hamburguer-line {
+        position: relative;
+        width: 100%;
+        height: 0.2rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        transition: 0.5s;
+        position: absolute;
+    }
+    .menu-hamburguer-line:nth-child(1) {
+        top: 0%;
+    }
+
+    .menu-hamburguer-line:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menu-hamburguer-line:nth-child(3) {
+        top: 100%;
+    }
+    .menu-mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        background-color: #ffffff;
+        list-style: none;
+        border-bottom: 0.1rem solid hsla(0, 0%, 0%, 0.114);
+        margin: 0;
+        top: -100%;
+        left: 0;
+        transition: 0.5s;
+        z-index: -2;
+    }
+    .menu-link {
+        padding: 1rem 0;
+        text-decoration: none;
+        background-color: #fff;
+        color: #111111;
+        position: relative;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .menu-item {
+        padding: 1rem 0;
+        position: relative;
+        background-color: #fff;
+    }
+    .menu-link[href="#"] .menu-item::after {
+        content: "";
+        position: absolute;
+        height: 0.2rem;
+        width: 40%;
+        background-color: #FF3A41;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        border-radius: 10rem;
+    }
+    .highlights-items {
+        position: relative;
+        width: 100%;
+    }
+
+
+#div-o-que-fazemos{
+    margin-top: 3vh;
+    position: relative;
+    top: 120vh;
+    height: 100vh;
+}
+
+.p-o-que-fazemos{
+    font-size: 1.8rem;
+}
+
+.box-o-que-fazemos{
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: 3;
+    grid-auto-flow: row;
+    gap: 60vh 0;
+    width:100vw;
+}
+
+.box-item-o-que-fazemos{
+    width: 50vw;
+    border: 0.22vw solid #eeee;
+}
+
+.box-item-o-que-fazemos:nth-child(2){
+    border: 0.1vw solid #ff3946;
+    position: absolute;
+    top: 50vh;
+}
+
+.img-circle{
+    border: 0.8vw solid #ff3946;
+
+}
+.noticias-desportivas{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    height:50vh;
+    grid-auto-flow: column;
+    position: absolute;
+    top: 70vh;
+}
+
+.esquerda-red-div{
+
+    width: 30vw;
+    height: 50vh;
+}
+
+.esquerda-red-div-p{
+
+    color: #ffff;
+    font-size: 1.25rem;
+    display: grid;
+    height: 55vh;
+    position: absolute;
+    left: 2vw;
+}
+
+.direito-red-div{
+    width: 40vw;
+    height: 50vh;
+    background-color:#ff3946;
+}
+
+.direito-red-div-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.div-desporto{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    place-items: center;
+    margin-left: 10vh;
+    position: absolute;
+    top: 120vh;
+}
+
+.div-p-desporto p{
+    margin-left: 20vh;
+}
+
+.div-p-desporto p:nth-child(1),.div-p-desporto p:nth-child(3),.div-p-desporto p:nth-child(5),.div-p-desporto p:nth-child(7){
+    color: #ff3946;
+}
+
+.btn-cadastrar{
+    width: 30vw;
+    left: 40vw;
+}
+
+#section-formas-de-pagamento-p{
+    position: absolute;
+    top: 290vh;
+    font-size: 2.1rem;
+    color: #000;
+    font-weight: bolder;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}
+
+.section-formas-de-pagamento-item{
+    position: absolute;
+    top: 304vh;
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: 3;
+    grid-auto-flow: row;
+    place-items: center;
+    justify-content: center;
+    gap: 10vh 0;
+    width: 100vw;
+    height: 40vh;
+}
+
+.section-formas-de-pagamento-item-div{
+    width: 50vw;
+    height: 25vh;
+    background-color: #ffff;
+    box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
+    border-radius:1vh;
+}
+
+.section-formas-de-pagamento-item-div:nth-child(2){
+    background-color:#FF5C62;
+    color: #ffff;
+}
+
+.section-formas-de-pagamento-item-div--img-div-img{
+
+    border: 0.8vw solid #ff3946;
+    position: absolute;
+    left: 42vw;
+    top: -4vh;
+    
+}
+.img-2{
+   border: none;
+}
+
+.section-formas-de-pagamento-item-div--img-div-title1 , .section-formas-de-pagamento-item-div--img-div-title2, .section-formas-de-pagamento-item-div--img-div-title3{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-left: 3vh;
+    color:#ff3946 ;
+}
+
+.section-formas-de-pagamento-item-div--img-div-title1{
+    position: absolute;
+    top: 3vh;
+}
+
+.section-formas-de-pagamento-item-div--img-div-title2{
+    position: absolute;
+    top: 38vh;
+    color: #fff;
+}
+
+.section-formas-de-pagamento-item-div--img-div-title3{
+    position: absolute;
+    top: 74vh;
+}
+
+
+.section-notificacoes{
+    display: none;
+}
+
+.div-imagem-rectangular{
+    display: grid;
+    grid-template-columns: 0;
+    grid-auto-flow: row;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 420vh;
+    left: -5.5vw;
+}
+
+.div-imagem-rectangular-subdiv{
+    display: grid;
+    grid-template-columns: 5;
+    grid-auto-flow: column;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    gap: 0 4vh;
+   
+}
+
+.div-imagem-rectangular-subdiv-item{
+    width: 12vw;
+    height: 50vh;
+    border-radius:1vw;
+}
+
+.div-imagem-rectangular-subdiv-item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:1vw;
+}
+
+.black-div{
+    position:absolute;
+    top: 0;
+    width: 12vw;
+    height: 50vh;
+    background-color: rgba(0,0, 0,0.4);
+    border-radius:1vw;
+}
+
+.div-imagem-rectangular-subdiv-p{
+    display: none;
+}
+
+
+.footer{
+    background-color:#000;
+    width: 100vw;
+    height: 33vh;
+    position: absolute;
+    bottom: -420vh;
+}
+
+.div-p-lssort{
+    position: absolute;
+    top: 4vh;
+    left: 7vh;
+}
+
+.div-icons{
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    gap: 0 2vw;
+    width: 12vw;
+    position: absolute;
+    left: 33.5vw;
+    top: 14vh;
+}
+
+.div-gps-img{
+    position: absolute;
+    left: 30.5vw;
+    top: 4.5vh;
+    width: 5vw;
+    height: 5vh;
+}
+
+.p-gps{
+    position: absolute;
+    left: 38vw;
+    top: 5.5vh;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.div-facebook-icon,.div-instagram-img,.div-linkedin-img{
+    width: 5vw;
+    height: 4vh;
+}
+
+.img-gps,.img-facebook,.img-linkedin,.img-instagram{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-cadastrar-footer{
+    width: 20vw;
+    border-radius: 0.8vw;
+    right: 8vw;
+   
+}
+
+
+}    
