@@ -38,7 +38,7 @@
 
 .div-planilha {
   display: flex;
-  border: 1px solid #00000071;
+  border: 1px solid #00000017;
   border-radius: 10px;
   height: 283px;
   width: 461px;
@@ -48,12 +48,13 @@
 }
 
 .div-msg {
-  border: 1px solid #00000071;
+  border: 1px solid #00000017;
   border-radius: 10px;
   height: 117px;
   width: 129px;
   padding: 7px;
   margin: 15px;
+  position: relative;
 }
 
 .div-msg img {
@@ -148,4 +149,12 @@ hr {
   flex-direction: column;
   align-items: center;
   padding-top: 12px;
+}
+.close-popup-icon {
+  position: absolute;
+  right: -10.5%;
+  top: -8.5%;
+  width: 22px;
+  height: 22px;
+  background-color: white;
 }
