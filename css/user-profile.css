@@ -1,0 +1,368 @@
+body {
+  overflow: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-important-info {
+  display: flex;
+  position: relative;
+  margin-bottom: 10rem;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 7rem;
+}
+.user-image-container {
+  display: flex;
+  position: relative;
+}
+.user-profile-image {
+  border-radius: 50%;
+  border: 1rem solid #FF3A41;
+  width: 24.5rem;
+  height: 24.5rem;
+  object-fit: cover;
+}
+.user-nationality-icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  position: absolute;
+  top: 0;
+  right: -2.5%;
+}
+
+.user-more-info-container {
+  box-sizing: border-box;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.user-name {
+  font-size: 3.2rem;
+}
+.user-gender {
+  margin-right: 4rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.user-brief-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.4rem;
+}
+.user-age {
+  color: #FF3A41;
+  font-size: 1.4rem;
+}
+.user-liked-modalities {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.normal-label {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.modalites-icon {
+  position: relative;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin: 0 1.5rem;
+}
+.flex-direction {
+  flex-direction: column;
+}
+.user-bottom-section-controller {
+  display: flex;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+.main-info-controller {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+
+.main-info-controller .user-name-input {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #333;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+
+.main-info-controller .container-all-modalites-to-see {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.container-all-modalities-to-see {
+  display: flex;
+}
+.modality-icon-container {
+  width: 4.2rem;
+  height: 4.2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.modality-icon-container::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  background-color: #00000023;
+}
+.modality-icon-container .modalites-icon {
+  margin: 0;
+}
+.remove-icon {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  top: -10%;
+right: -15%;
+}
+
+.container-control-the-gender {
+  display: flex;
+}
+.gender-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.gender-icon-container:hover {
+  background-color: #00000023;
+}
+.gender-selected {
+  background-color: rgba(0, 163, 44, 0.33);
+}
+.genders-icon {
+  padding: 1rem;
+}
+.user-nationality-label, .user-gender-label, .user-birth-day-label{
+  margin-top: 5rem;
+}
+
+.date-field {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.row {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #333;
+} 
+
+.main-payments-info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.main-payments-info .h3-title {
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.logs-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+  height: 40rem;
+  position: relative;
+}
+
+
+.income-container-symbol {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+}
+
+.income-symbol {
+  width: 2.4rem;
+  height: 2.4rem;
+  z-index: 1;
+}
+
+.income-container-symbol::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 65%;
+  background-color: #FFA048;
+  border-radius: 50%;
+}
+
+.income-container-symbol::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: #ffa0483b;
+  border-radius: 50%;
+}
+
+.orange-symbol-container::after {
+  background-color: #FFA048;
+}
+
+.orange-symbol-container::before {
+  background-color: #ffa0483b;
+}
+
+.green-symbol-container::after {
+  background-color: #00A32B;
+}
+
+.green-symbol-container::before {
+  background-color: #00A32B3b;
+}
+
+.blue-symbol-container::after {
+  background-color: #00B1FF;
+}
+
+.blue-symbol-container::before {
+  background-color: #00B1FF3b;
+}
+
+.payment-log-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.157);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  width: 95%;
+}
+
+div.payment-log-container:nth-child(2) {
+  margin-top: 5rem;
+}
+div.payment-log-container:last-child {
+  margin-bottom: 2.5rem;
+}
+.payment-value {
+  color: #FFA048;
+  font-size: 2.4rem;
+}
+.payment-method {
+  color: #000000b4;
+  margin: 0.5rem 0;
+}
+.payment-date {
+  color: #5E5E5E;
+}
+.payment-info {
+  margin-left: 5%;
+}
+.income-container-symbol {
+  margin-right: 2.5%;
+}
+.logs-row-filter-row {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  width: 28%;
+  z-index: 2;
+}
+.log-filter-label {
+  font-size: 1.2rem;
+  color: #333;
+  margin-right: 1rem;
+}
+
+.more-detail-controller-and-info-notifications {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aux-controller-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.aux-contoller-container-1 {
+  width: 50%;
+}
+.aux-contoller-container-1 .h3-title {
+  margin-bottom: 1.5rem;
+}
+.aux-contoller-container-2 {
+  width: 50%;
+}
+.aux-contoller-container-2 .h3-title {
+  margin-bottom: 1.5rem;
+}
+
+
+.div-msg {
+  border: 1px solid #00000071;
+  border-radius: 10px;
+  height: 117px;
+  width: 20rem;
+  padding: 7px;
+  margin: 15px;
+  display: inline-block;
+}
+.last-notifications-sended-container {
+  overflow: auto;
+  width: 100%;
+  position: relative;
+}
+
+select {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 0.1rem solid rgba(51, 51, 51, 0.205);
+  margin-right: 1rem;
+}
