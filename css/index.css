@@ -326,7 +326,7 @@ body{
 
 .img-2{
 
-    border: 0.30vw solid #fff;
+   border: none;
 }
 
 .section-formas-de-pagamento-item-div--img-div-title{
@@ -437,6 +437,7 @@ body{
     font-size: 1.4rem;
     border-radius: 1vh;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .btn-imediata{
@@ -497,6 +498,12 @@ body{
     font-weight: bolder;  
     padding-bottom: 1.5vh;
 }
+
+
+.p-span-1{
+    color: #000;
+}
+
 
 .p-span{
     color: #fff;
