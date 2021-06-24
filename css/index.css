@@ -111,7 +111,7 @@ body{
     
 }
 
-.div-o-que-fazemos{
+#div-o-que-fazemos{
     margin-top: 3vh;
     position: relative;
     top: 103vh;
@@ -262,9 +262,13 @@ body{
     top: 30vh;
     left: 71vw;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1.5vh;
+    font-weight: bold;
 }
 
-.section-formas-de-pagamento-p{
+#section-formas-de-pagamento-p{
     position: absolute;
     top: 135vh;
     font-size: 2.1rem;
