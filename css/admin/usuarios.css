@@ -43,6 +43,37 @@
 .event-list {
   margin-left: 20px;
   font-size: 14px;
+  list-style: none;
+}
+.event-list-item {
+  position: relative;
+}
+li.event-list-item:nth-child(1)::after {
+  background-color: #FF3A41;
+}
+li.event-list-item:nth-child(2)::after {
+  background-color: #36FD91;
+}
+li.event-list-item:nth-child(3)::after {
+  background-color: #FF22F6;
+}
+li.event-list-item:nth-child(4)::after {
+  background-color: #575757;
+}
+li.event-list-item:nth-child(5)::after {
+  background-color: #FFB11A;
+}
+
+.event-list-item::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff3a41;
+  border-radius: 50%;
+  left: -20%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .event-perc img {
