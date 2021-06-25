@@ -3,6 +3,9 @@
   justify-content: space-between;
   margin-top: 40px;
 }
+.main-header--right-part {
+  justify-content: space-between !important;
+}
 .centro-de-notif img {
   -ms-transform: rotate(20deg); /* IE 9 */
   transform: rotate(340deg);

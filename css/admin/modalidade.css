@@ -2,6 +2,9 @@ button {
   background-color: transparent;
   border: none;
 }
+.main-header--right-part {
+  justify-content: space-between !important;
+}
 
 .functionality-panel h1 {
   margin-top: 100px;

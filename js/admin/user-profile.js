@@ -157,3 +157,7 @@ let app = new Vue({
         }
     },
 })
+
+document.querySelector('.remove-modifications').addEventListener('click', () => {
+    window.location.replace('../firstPage.html');
+})

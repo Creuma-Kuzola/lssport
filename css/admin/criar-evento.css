@@ -1,3 +1,10 @@
+.main-header {
+  display: flex;
+}
+.main-header--right-part {
+  justify-content: space-between !important;
+}
+
 .btn-cancelar-evento {
   text-decoration: none;
   margin-top: 50px;

@@ -5,6 +5,7 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .user-profile-important-info {
@@ -384,7 +385,35 @@ select {
   width: 3.2rem;
   height: 3.2rem;
 }
+.save-modifications {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #00B1FF;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  flex: 1;
+  width: 15rem;
+}
+
+.remove-modifications {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #ff0037;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 15rem !important;
+  flex: inherit;
+  margin-right: 1rem;
+}
+
 @media screen and (max-width: 765px) {
+  .main-container {
+    align-items: flex-start;
+  }
   .user-profile-important-info {
     flex-direction: column;
   }

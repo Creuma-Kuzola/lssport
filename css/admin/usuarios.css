@@ -3,6 +3,9 @@
   color: #565656;
   margin-left: 110px;
 }
+.main-header--right-part {
+  justify-content: space-between !important;
+}
 .div-user-geral {
   height: 153px;
   width: 1280px;

@@ -1,6 +1,9 @@
 body {
     overflow: hidden;
 }
+.main-header--right-part {
+    justify-content: space-between !important;
+  }
 
 .menu-list-div {
     width: 20%;
