@@ -28,25 +28,25 @@
                     <div class="input-row">
                         <img src="../icons/user-alt.svg" alt="" class="icon-field">
 
-                        <input type="text" class="input-field" placeholder="Usuário" name="user-name">
+                        <input type="text" required="true" class="input-field" placeholder="Usuário" name="user-name">
                     </div>
 
                     <div class="input-row">
                         <img src="../img/outras-img/email(1).png" alt="" class="icon-field">
 
-                        <input type="email" class="input-field" placeholder="email@gmail.com" name="user-email">
+                        <input type="email" required="true"  class="input-field" placeholder="email@gmail.com" name="user-email">
                     </div>
 
                     <div class="input-row">
                         <img src="../icons/lock.svg" alt="" class="icon-field">
 
-                        <input type="password" class="input-field" placeholder="Palavra-passe" name="user-password">
+                        <input type="password" required="true"  class="input-field" placeholder="Palavra-passe" name="user-password">
                     </div>
 
                     <div class="input-row">
                         <img src="../icons/lock.svg" alt="" class="icon-field">
 
-                        <input type="password" class="input-field" placeholder="Confimar a palavra-passe" name="user-password-confirm">
+                        <input type="password" required="true"  class="input-field" placeholder="Confimar a palavra-passe" name="user-password-confirm">
                     </div>
 
                     <input type="button" value="Cadastrar" class="sign-up-button">
@@ -56,6 +56,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.querySelector('.sign-up-button').addEventListener('click', () => {
+            window.location.replace('sign-up-steps.html');
+        })
+
+    </script>
 </body>
 
 </html>

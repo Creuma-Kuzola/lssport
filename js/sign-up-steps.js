@@ -21,7 +21,7 @@ for (let i = 0; i < stepDivs.length; i++) {
             }
         } else {
             nextButtons[stepIndex].onclick = (event) => {
-                window.location.pathname = '/index.html';
+                window.location.replace('firstPage.html');
             }
         }
     }

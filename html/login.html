@@ -28,13 +28,13 @@
                     <div class="input-row">
                         <img src="../icons/user-alt.svg" alt="" class="icon-field">
 
-                        <input type="text" class="input-field" placeholder="Usuário" name="user-name">
+                        <input type="text" class="input-field" placeholder="Usuário" name="user-name" required="true">
                     </div>
 
                     <div class="input-row">
                         <img src="../icons/lock.svg" alt="" class="icon-field">
 
-                        <input type="password" class="input-field" placeholder="Password" name="user-password">
+                        <input type="password" class="input-field" placeholder="Password" name="user-password" required="true">
                     </div>
 
                     <a href="#" class="did-you-forgort-the-password">Esqueceu a palavra-passe?</a>
@@ -46,6 +46,26 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.querySelector('.login-button').addEventListener('click', () => {
+            const userNameInput = document.querySelector('input[name="user-name"]').value;
+            const userPassword = document.querySelector('input[name="user-password"]').value;
+
+            if (userNameInput == 'root' && userPassword == 'root') {
+                
+            } else {
+                if (userNameInput == 'ricardo' && userPassword == 'ricardol1') {
+                    window.location.replace('firstPage.html');
+                } else {
+                    alert('Olá :-), A gente não encontrou um usuário com tais credênciais!');
+                    userNameInput.value = '';
+                    userPassword.value = '';
+                }
+            }
+        })
+
+    </script>
 </body>
 
 </html>
