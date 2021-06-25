@@ -1,6 +1,10 @@
 .income-info-container {
     margin-left: 0 !important;
 }
+.main-header--right-part {
+    justify-content: space-between !important;
+  }
+
 
 .incomes-div-container {
     width: 90%;

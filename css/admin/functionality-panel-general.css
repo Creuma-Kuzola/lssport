@@ -1,3 +1,11 @@
+.main-header {
+    display: flex;
+  }
+
+.main-header--right-part {
+    justify-content: space-between !important;
+  }
+
 .main-container {
     display: flex;
     overflow: hidden;

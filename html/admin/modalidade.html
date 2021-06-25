@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/admin/menu.css">
     <link rel="stylesheet" href="../../css/admin/functionality-panel-general.css">
     <link rel="stylesheet" href="../../css/admin/modalidade.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Modalidade - Admin</title>
 </head>
 
@@ -67,28 +68,14 @@
 
 
                 <ul>
-                    <li>
-                        <div class="mod-icon">
-                            <a><img src="../../icons/fxemoji_running@3x.svg" alt=""></a>
+                    <li v-for="(modility, index) in modalities" style="cursor: pointer;" @click="() => { modalityIndex = index }">
+                        <div  class="mod-icon">
+                            <a><img :src="modility.imageUrl" alt=""></a>
                         </div>
-                        <span>Atletismo</span>
+                        <span>{{ modility.name }}</span>
 
                     </li>
 
-                    <li>
-                        <div class="mod-icon">
-                            <a><img src="../../icons/noto_horse-racing-medium-dark-skin-tone@3x.svg" alt=""></a>
-                        </div>
-                        <span>Galope</span>
-
-                    </li>
-
-                    <li>
-                        <div class="mod-icon">
-                            <a><img src="../../icons/emojione_racing-car@3x.svg" alt=""></a>
-                        </div>
-                        <div>Automobilismo</div>
-                    </li>
                     <li>
                         <button onclick="location.href =''" class="btn-carregar-evento" type="button">
                             <img src="../../icons/add_1.svg" alt="">
@@ -96,27 +83,20 @@
 
                     </li>
                 </ul>
-
-
-
             </div>
 
 
             <div class="div-info-modalidade">
                 <div class="div-img">
-                    <img src="../../icons/fxemoji_running@3x.svg" alt="">
+                    <img :src="modalities[modalityIndex].imageUrl" alt="">
                 </div>
-                <div class="mod-titulo">
-                    <p>Atletismo</p>
-                </div>
-                <label for="">Descricao</label>
-                <div class="mod-descricao">
-                    <p>
-                        O atletismo é das actividades fisicas que <br>
-                        acabam proporciando de maneira excepcional <br>
-                        todas as partes do corpo ao mesmo tempo ...
-                    </p>
-                </div>
+                <input class="mod-titulo" :value="modalities[modalityIndex].name" type="">
+
+                </input><br>
+                <label for="">Descricao</label><br>
+                <textarea type="text" class="mod-descricao" :value="modalities[modalityIndex].descricao">
+                </textarea><br>
+
                 <label for="">Tipo de evento</label>
 
                 <div class="div-crir-modalidade">
@@ -129,24 +109,10 @@
                 </div>
 
                 <div class="mod-criadas">
-                    <div class="element">
-                        <div>Prova de 100 m</div>
+                    <div v-for="activity in modalities[modalityIndex].activities" class="element">
+                        <div>{{ activity }}</div>
                         <button>
-                            <img src="../../icons/clarity_times-circle-line@3x.svg" alt="" style="width: 32px">
-                        </button>
-                    </div>
-
-                    <div class="element">
-                        <div>Prova de 100 m</div>
-                        <button>
-                            <img src="../../icons/clarity_times-circle-line@3x.svg" alt="" style="width: 32px">
-                        </button>
-                    </div>
-
-                    <div class="element">
-                        <div>Prova de 100 m</div>
-                        <button>
-                            <img src="../../icons/clarity_times-circle-line@3x.svg" alt="" style="width: 32px">
+                            <img src="../../icons/clarity_times-circle-line@3x.svg" alt="" style="width: 32px" @click="removeActivity(modalities[modalityIndex].name)">
                         </button>
                     </div>
 
@@ -158,6 +124,7 @@
 
         </div>
     </div>
+    <script src="../../js/admin/modalidade.js"></script>
 </body>
 
 </html>
