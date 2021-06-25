@@ -92,12 +92,18 @@
     cursor: pointer;
 }
 
+.list-item a {
+
+    text-decoration: none;
+    color: #111111;
+}
+
 .nav:nth-child(1):hover{
     color: #fff;
     background-color: #00ccff;;
 }
 
-.nav:nth-child(2):hover{
+.nav:nth-child(2):hover {
     background-color: #ffaf61;
     color: #fff;
     font-weight: bold;
@@ -130,9 +136,58 @@
     object-fit: cover;
 }
 
-.updates-container--update-title {
+.updates-container--update-title{
     font-size: 2.6rem;
     word-wrap: normal;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.updates-container--update-title a  {
+    font-size: 2.6rem;
+    word-wrap: normal;
+    text-decoration: none;
+    color: #000;
+}
+
+.updates-container--update-title a:hover{
+    color: #FF3A41;
+}
+
+.img-grid{
+    display: grid;
+    grid-template-columns: 4;
+    grid-auto-flow: column;
+    place-items: center;
+    background-color: #fff;
+    height: 35vh;
+    border: 0.5px solid #dfdddd;
+    border-radius: 1vw;
+    margin-bottom: 2.5vh;
+    cursor: pointer;
+}
+
+.img-grid img {
+    box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
+    border-radius: 50%;
+}
+.p-2{
+    font-size: 5rem;
+}
+
+.div-title{
+
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 0 33vh;
+    position: absolute;
+    bottom: 12.5vh;
+    left: 2vw;
 }
 
 .see-more-button {
@@ -199,6 +254,7 @@
     color: #FF3A41;
     background-color: #ffffff;
 }
+
 #updates-by-highlight .list .list-item {
     transition: 0.5s;
     cursor: pointer;
@@ -235,6 +291,46 @@
     color: #fff;
     font-size: 2.2rem;
 }
+
+a {
+    text-decoration: none;
+}
+
+.item-1{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    text-decoration: none;
+    width: 50vw;
+}
+
+.main-div-img{
+    width: 15vw;
+    height: 20vh;
+}
+
+.main-div-img--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a .item-1 .p-text{
+    color: #111111;
+    font-size: 1.5rem;
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+
+a .item-1 .p-text h2:hover{
+    color: #FF3A41;
+}
+
+
+a .item-1 .p-text p:hover{
+    color: #FF3A41;
+}
+
 
 @media screen and (max-width: 765px) {
     .menu-list {

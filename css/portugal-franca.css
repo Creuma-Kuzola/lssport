@@ -1,0 +1,193 @@
+@font-face {
+    font-family: RobotoBold;
+    src: url('/font/Roboto-Regular.ttf');
+}
+
+.seta-img{
+
+    width:100%;
+    height: 100%;
+}
+
+#updates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.updates-container--update {
+    margin: 5rem 2.5rem 5rem 0;
+    position: relative;
+    width: 30%;
+}
+
+.updates-container--update-img {
+    width: 100%;
+    height: 32rem;
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+    object-fit: cover;
+}
+
+
+.updates-container--update-title a  {
+    font-size: 2.6rem;
+    word-wrap: normal;
+    text-decoration: none;
+    color: #000;
+    margin-left: 3vw;
+}
+
+.img-grid{
+    display: grid;
+    grid-template-columns: 4;
+    grid-auto-flow: column;
+    place-items: center;
+    background-color: #fff;
+    height: 35vh;
+    border: 0.5px solid #dfdddd;
+    border-radius: 1vw;
+    margin-bottom: 2.5vh;
+    cursor: pointer;
+}
+
+.img-grid img {
+    box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
+    border-radius: 50%;
+}
+.p-2{
+    font-size: 5rem;
+}
+
+.div-title{
+
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    font-size: 1.8rem;
+    gap: 0 35vh;
+    position: absolute;
+    left: 2vw;
+}
+
+.img-grid{
+    display: grid;
+    grid-template-columns: 4;
+    grid-auto-flow: column;
+    place-items: center;
+    background-color: #fff;
+    height: 35vh;
+    border: 0.5px solid #dfdddd;
+    border-radius: 1vw;
+    margin-bottom: 2.5vh;
+    cursor: pointer;
+}
+
+.img-grid img {
+    box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
+    border-radius: 50%;
+}
+.p-2{
+    font-size: 5rem;
+}
+
+.div-title{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 0 33vh;
+    position: absolute;
+    bottom: 12.5vh;
+    left: 2vw;
+}
+
+.conteudo-1-p, .conteudo-2-p{
+    text-align: justify;
+    margin: 3vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+}
+
+.conteudo-2-p{
+    margin-bottom: 0;
+}
+
+.estatisticas-jogo{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 11;
+    justify-content: center;
+    gap: 2vw 18vh;
+    margin-top: 5vh;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10, .item-11{
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    gap: 0 22vh;
+}
+
+.item-1{
+    gap: 0 11vh;
+}
+
+.item-2{
+    gap: 0 23vh;
+}
+
+.item-3{
+    gap: 0 20vh;
+}
+
+.item-4{
+    gap: 0 22vh;
+}
+
+.item-5{
+    gap: 0 24vh;
+}
+
+.item-6{
+    gap: 0 21vh;
+}
+
+.item-7{
+    gap: 0 25vh;
+}
+
+.item-8{
+    gap: 0 20vh;
+}
+
+.item-9{
+    gap: 0 20vh;
+}
+
+.item-10{
+    gap: 0 22vh;
+}
+
+.item-11{
+    gap: 0 24vh;
+}
+
+.p-estat{
+    font-size: 1.8rem;
+    margin-top: 4vh;   
+}
+
+.item-2 p, .item-3 p, .item-4 p, .item-5 p, .item-6 p, .item-7 p, .item-8 p, .item-9 p, .item-10 p, .item-11 p{
+    font-size: 1.5rem;
+}
+
+.estatisticas-jogo img {
+    box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
+    border-radius: 50%;
+
+}
