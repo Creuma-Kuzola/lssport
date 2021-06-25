@@ -42,7 +42,7 @@
                 <a href="admin/user-profile.html" class="menu-link">
                     <li class="menu-item">Conta</li>
                 </a>
-                <a href="html/#" class="menu-link">
+                <a href="../html/boas-vindas.html" class="menu-link">
                     <li class="menu-item">Terminar</li>
                 </a>
             </ul>
@@ -54,34 +54,65 @@
                 <a href="admin/user-profile.html" class="menu-link">
                     <li class="menu-item">Conta</li>
                 </a>
-                <a href="html/#" class="menu-link">
+                <a href="../html/boas-vindas.html" class="menu-link">
                     <li class="menu-item">Terminar</li>
                 </a>
             </ul>
         </nav>
     </header>
-
-
+    
     <div class="main-container flex-column-section">
         <section id="last-updates" class="normal-section flex-column-section">
             <h1 id="last-updates-title" class="heading-1">
                 Últimos<br>Destaques
             </h1>
             <ul class="list">
-                <li class="list-item nav active" @click="changeCurrentNews">Futebol</li>
-                <li class="list-item nav" @click="changeCurrentNews">Automobilismo</li>
-                <li class="list-item nav" @click="changeCurrentNews">Atletismo</li>
+                <li class="list-item nav active">Futebol</li>
+                <li class="list-item nav">Automobilismo</li>
+                <li class="list-item nav">Atletismo</li>
             </ul>
 
             <section id="updates-container">
-                
-                <div v-for="post in news[actualNewsTab]" class="updates-container--update flex-column-section">
-                    <img :src="post.imageUrl" alt=""
+                <div class="updates-container--update flex-column-section">
+                    <img src="../img/outras-img/Ellipse 64-1.png" alt=""
                         class="updates-container--update-img">
-                    <h2 class="updates-container--update-title">{{ post.title }}</h2>
+                    <!--<img src="../img/outras-img/Ellipse 65.png" alt="">-->
+                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
                 </div>
 
-                <button v-if="news[actualNewsTab].length > 6" class="see-more-updates-button see-more-button">ver mais</button>
+                
+
+                <div class="updates-container--update flex-column-section">
+                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
+                        class="updates-container--update-img">
+                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
+                </div>
+
+                <div class="updates-container--update flex-column-section">
+                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
+                        class="updates-container--update-img">
+                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
+                </div>
+
+                <div class="updates-container--update flex-column-section">
+                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
+                        class="updates-container--update-img">
+                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
+                </div>
+
+                <div class="updates-container--update flex-column-section">
+                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
+                        class="updates-container--update-img">
+                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
+                </div>
+
+                <div class="updates-container--update flex-column-section">
+                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
+                        class="updates-container--update-img">
+                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
+                </div>
+
+                <button class="see-more-updates-button see-more-button">ver mais</button>
             </section>
         </section>
 
@@ -129,7 +160,7 @@
         </section>
     </div>
     <script src="../js/mobileMenuAction.js"></script>
-    <script src="../js/firstPage.js"></script>
+  
 </body>
 
 </html>
