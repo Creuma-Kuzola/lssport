@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/admin/functionality-panel-general.css">
     <link rel="stylesheet" href="../../css/admin/home.css">
     <link rel="stylesheet" href="../../css/user-profile.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>William James</title>
 </head>
 
@@ -22,29 +23,21 @@
         </div>
 
         <div class="main-header--right-part">
-            <div class="search-field">
-                <input type="text" name="searchBar" id="search-bar" placeholder="Pesquisar" class="search-field--input">
-            </div>
 
-            <div class="user-div">
-                <img src="../../img/outras-img/creuma-kuzola.jpg" alt="user-img" class="user-div--user-img">
-                <h3 class="user-div--user-name">Creuma Kuzola</h3>
-                <button class="user-div--drop-down-button"></button>
-            </div>
         </div>
     </header>
 
     <div class="main-container">
         <section class="user-profile-important-info">
             <section class="user-image-container">
-                <img src="../../img/outras-img/pexels-a">exander-nadrilyanski-3684122.jpg" alt=""
+                <img src="../../img/outras-img/pexels-alexander-nadrilyanski-3684122.jpg" alt=""
                     class="user-profile-image">
 
                 <img src="../../icons/emojione_flag-for-angola@3x.svg" alt="" class="user-nationality-icon">
             </section>
             <section class="user-more-info-container">
                 <h1 class="user-name">
-                    William Lewis
+                    {{ userName }}
                     <img src="../../icons/noto-v1_male-sign@3x.svg" alt="gender representation" class="user-gender">
                 </h1>
                 <section class="user-brief-info">
@@ -53,9 +46,7 @@
                         <h3 class="user-modalites-label normal-label">Modalidades Favoritas</h3>
 
                         <section class="modalites-liked-by-the-user">
-                            <img src="../../icons/emojione_racing-car@3x.svg" alt="" class="modalities-icon">
-                            <img src="../../icons/emojione_racing-car@3x.svg" alt="" class="modalities-icon">
-                            <img src="../../icons/emojione_racing-car@3x.svg" alt="" class="modalities-icon">
+                            <img v-for="modality in modalitiesLiked" :src="modality.imageUrl" alt="" class="modalities-icon">
                         </section>
                     </section>
                 </section>
@@ -64,34 +55,24 @@
 
         <section class="user-bottom-section-controller">
             <section class="main-info-controller flex-direction">
-                <input type="text" class="user-name-input">
+                <input type="text" class="user-name-input" :value="userName">
 
                 <h3 class="user-modalites-label normal-label">Modalidades</h3>
                 <section class="container-all-modalities-to-see">
-                    <div class="modality-icon-container">
-                        <img src="../../icons/emojione_racing-car@3x.svg" alt="" class="modalities-icon">
-                        <img src="../../icons/clarity_times-circle-line@3x.svg" alt="" class="remove-icon">
-                    </div>
-
-                    <div class="modality-icon-container">
-                        <img src="../../icons/emojione_racing-car@3x.svg" alt="" class="modalities-icon">
-                        <img src="../../icons/clarity_times-circle-line@3x.svg" alt="" class="remove-icon">
-                    </div>
-
-                    <div class="modality-icon-container">
-                        <img src="../../icons/emojione_racing-car@3x.svg" alt="" class="modalities-icon">
-                        <img src="../../icons/clarity_times-circle-line@3x.svg" alt="" class="remove-icon">
+                    <div v-for="modality in modalitiesLiked" class="modality-icon-container">
+                        <img :src="modality.imageUrl" alt="" class="modalities-icon">
+                        <img src="../../icons/clarity_times-circle-line@3x.svg" alt="" class="remove-icon" @click="remove(modality.name)">
                     </div>
                 </section>
 
 
                 <h3 class="user-gender-label normal-label">Sexo</h3>
                 <section class="container-control-the-gender">
-                    <div class="gender-icon-container gender-selected">
+                    <div class="gender-icon-container gender-selected" @click="changeGender('male')">
                         <img src="../../icons/noto-v1_male-sign@3x.svg" alt="" class="genders-icon">
                     </div>
 
-                    <div class="gender-icon-container">
+                    <div class="gender-icon-container" @click="changeGender('female')">
                         <img src="../../icons/noto-v1_female-sign@3x.svg" alt="" class="genders-icon">
                     </div>
                 </section>
@@ -334,7 +315,7 @@
                         <option value="1998">
                             1998
                         </option>
-                        <option value="1997">
+                        <option value="1997" selected="true">
                             1997
                         </option>
                     </select>
@@ -350,83 +331,34 @@
                 <div class="logs-container">
                     <div class="logs-row-filter-row">
                         <p class="log-filter-label">Ordenar por: </p>
-                        <select name="" id="" class="">
+                        <select name="" id="" class="" @change="filterPayments">
                             <option value="1">
-                                Últimos Pagamentos
+                                Todos
                             </option>
                             <option value="2">
-                                Maiores Pagamentos
+                                Pre-pago
                             </option>
-                            <option value="1">
-                                Menores Pagamentos
+                            <option value="3">
+                                Mensal
                             </option>
-                            <option value="1">
-                                1 Mês Passado
+                            <option value="4">
+                                Factura
                             </option>
                         </select>
                     </div>
 
-                    <div class="payment-log-container">
-                        <div class="payment-info">
-                            <h2 class="payment-value">+ 1.000,00 AOA</h2>
-                            <h4 class="payment-method">Pré-pago</h3>
-                            <h3 class="divayment-date">15/06/2021</h3>
+                    <div v-for="payment in paymentsLogsShowed" class="payment-log-container">
+                        <div  class="payment-info">
+                            <h2 class="payment-value" :class="{ greenColor: payment.type.toLowerCase() == 'pre-pago', blueColor: payment.type.toLowerCase() == 'factura', orangeColor: payment.type.toLowerCase() == 'mensal' }">+ {{ payment.value }} AOA</h2>
+                            <h4 class="payment-method">{{ payment.type }}</h3>
+                            <h3 class="divayment-date">{{ payment.date }}</h3>
                         </div>
                         
-                        <div class="income-container-symbol orange-symbol-container">
+                        <div class="income-container-symbol" :class="{ 'green-symbol-container': payment.type.toLowerCase() == 'pre-pago', 'blue-symbol-container': payment.type.toLowerCase() == 'factura', 'orange-symbol-container': payment.type.toLowerCase() == 'mensal' }">
                             <img src="../../icons/dashicons_money-alt@3x.svg" alt="money" class="income-symbol">
                         </div>
                     </div>
 
-                    <div class="payment-log-container">
-                        <div class="payment-info">
-                            <h2 class="payment-value">+ 1.000,00 AOA</h2>
-                            <h4 class="payment-method">Pré-pago</h3>
-                            <h3 class="divayment-date">15/06/2021</h3>
-                        </div>
-                        
-                        <div class="income-container-symbol orange-symbol-container">
-                            <img src="../../icons/dashicons_money-alt@3x.svg" alt="money" class="income-symbol">
-                        </div>
-                    </div>
-
-
-                    <div class="payment-log-container">
-                        <div class="payment-info">
-                            <h2 class="payment-value">+ 1.000,00 AOA</h2>
-                            <h4 class="payment-method">Pré-pago</h3>
-                            <h3 class="divayment-date">15/06/2021</h3>
-                        </div>
-                        
-                        <div class="income-container-symbol orange-symbol-container">
-                            <img src="../../icons/dashicons_money-alt@3x.svg" alt="money" class="income-symbol">
-                        </div>
-                    </div>
-
-                    <div class="payment-log-container">
-                        <div class="payment-info">
-                            <h2 class="payment-value">+ 1.000,00 AOA</h2>
-                            <h4 class="payment-method">Pré-pago</h3>
-                            <h3 class="divayment-date">15/06/2021</h3>
-                        </div>
-                        
-                        <div class="income-container-symbol orange-symbol-container">
-                            <img src="../../icons/dashicons_money-alt@3x.svg" alt="money" class="income-symbol">
-                        </div>
-                    </div>
-
-
-                    <div class="payment-log-container">
-                        <div class="payment-info">
-                            <h2 class="payment-value">+ 1.000,00 AOA</h2>
-                            <h4 class="payment-method">Pré-pago</h3>
-                            <h3 class="divayment-date">15/06/2021</h3>
-                        </div>
-                        
-                        <div class="income-container-symbol orange-symbol-container">
-                            <img src="../../icons/dashicons_money-alt@3x.svg" alt="money" class="income-symbol">
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -435,50 +367,14 @@
                 <h3 class="h3-title">Últimas Notificações Enviadas</h3>
 
                 <section class="last-notifications-sended-container">
-                    <div class="div-msg">
-                        <p style="font-size: 14px;">20:22</p><br> <img
+                    <div v-for="notification in notifications" class="div-msg">
+                        <p style="font-size: 14px;">{{ notification.time }}</p><br> <img
                             src="../../icons/ant-design_message-filled@3x.svg" alt="">
-                        <p style="font-size: 14px;">Final da Champion</p><br>
-                        <p style="font-size: 1brpx;color:#646464;">A grande final <br>
-                            inglesa da <br>
-                            Champions Legue</p>
+                        <p style="font-size: 14px;">{{ notification.header }}</p><br>
+                        <p style="font-size: 1brpx;color:#646464;">{{notification.desc}}</p>
                     </div>
 
-                    <div class="div-msg">
-                        <p style="font-size: 14px;">20:22</p><br> <img
-                            src="../../icons/ant-design_message-filled@3x.svg" alt="">
-                        <p style="font-size: 14px;">Final da Champion</p><br>
-                        <p style="font-size: 1brpx;color:#646464;">A grande final <br>
-                            inglesa da <br>
-                            Champions Legue</p>
-                    </div>
-
-                    <div class="div-msg">
-                        <p style="font-size: 14px;">20:22</p><br> <img
-                            src="../../icons/ant-design_message-filled@3x.svg" alt="">
-                        <p style="font-size: 14px;">Final da Champion</p><br>
-                        <p style="font-size: 1brpx;color:#646464;">A grande final <br>
-                            inglesa da <br>
-                            Champions Legue</p>
-                    </div>
-
-                    <div class="div-msg">
-                        <p style="font-size: 14px;">20:22</p><br> <img
-                            src="../../icons/ant-design_message-filled@3x.svg" alt="">
-                        <p style="font-size: 14px;">Final da Champion</p><br>
-                        <p style="font-size: 1brpx;color:#646464;">A grande final <br>
-                            inglesa da <br>
-                            Champions Legue</p>
-                    </div>
-
-                    <div class="div-msg">
-                        <p style="font-size: 14px;">20:22</p><br> <img
-                            src="../../icons/ant-design_message-filled@3x.svg" alt="">
-                        <p style="font-size: 14px;">Final da Champion</p><br>
-                        <p style="font-size: 1brpx;color:#646464;">A grande final <br>
-                            inglesa da <br>
-                            Champions Legue</p>
-                    </div>
+                    
                 </section>
 
                 <div class="aux-controller-container">
@@ -524,6 +420,7 @@
         </section>
 
     </div>
+    <script src="../../js/admin/user-profile.js"></script>
 </body>
 
 </html>
