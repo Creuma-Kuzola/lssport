@@ -227,7 +227,7 @@ body{
     height:50vh;
     grid-auto-flow: column;
     position: absolute;
-    top: 70vh;
+    top: 100vh;
 }
 
 .noticias-desportivas{
@@ -278,7 +278,8 @@ body{
 .div-p-desporto{
 
     position: absolute;
-    top: 17vh;  
+    top: 17vh;
+    
 }
 
 .div-p-desporto p{
@@ -312,7 +313,7 @@ body{
 
 #section-formas-de-pagamento-p{
     position: absolute;
-    top: 138vh;
+    top: 135vh;
     font-size: 2.1rem;
     color: #000;
     font-weight: bolder;
@@ -342,7 +343,6 @@ body{
     background-color: #ffff;
     box-shadow: 0px 0px 0.8vh rgba(0,0,0,0.25);
     border-radius:1vh;
-    position: relative;
 }
 
 .section-formas-de-pagamento-item-div:nth-child(2){
@@ -357,7 +357,6 @@ body{
     width:11vh;
     height: 11vh;
     position: relative;
-    border-radius: 50%;
 }   
 
 .section-formas-de-pagamento-item-div--img-div-img{
@@ -365,11 +364,11 @@ body{
     height: 11vh;
     border-radius: 50%;
     object-fit: cover;
-    border: 0.40vw solid #ff3946;
+    border: 0.30vw solid #ff3946;
     position: absolute;
     left: 45vh;
     top: -4vh;
-   
+    
 }
 
 .img-2{
@@ -380,36 +379,10 @@ body{
 .section-formas-de-pagamento-item-div--img-div-title{
     font-size: 1.6rem;
     font-weight: bolder;
+    position: absolute;
+    top: 11vh;
     margin-left: 3vh;
     color:#ff3946 ;
-}
-
-
-.section-formas-de-pagamento-item-div--img-div-title1 , .section-formas-de-pagamento-item-div--img-div-title2, .section-formas-de-pagamento-item-div--img-div-title3{
-    font-size: 1.6rem;
-    font-weight: bolder;
-    margin-left: 3vh;
-    color:#ff3946 ;
-}
-
-.section-formas-de-pagamento-item-div--img-div-title1{
-    position: absolute;
-    top: 4vh;
-}
-
-.section-formas-de-pagamento-item-div--img-div-title2{
-    position: absolute;
-    top: 4vh;
-    color: #fff;
-}
-
-.section-formas-de-pagamento-item-div--img-div-title3{
-    position: absolute;
-    top: 4vh;
-}
-
-.section-notificacoes{
-    display: none;
 }
 
 .title-2{
@@ -555,6 +528,7 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 0.3vw;
+    
 }
 
 .black-div{
@@ -843,7 +817,7 @@ body{
     height:50vh;
     grid-auto-flow: column;
     position: absolute;
-    top: 100vh;
+    top: 70vh;
 }
 
 .esquerda-red-div{
@@ -882,12 +856,11 @@ body{
     place-items: center;
     margin-left: 10vh;
     position: absolute;
-    top: 150vh;
+    top: 120vh;
 }
 
 .div-p-desporto p{
     margin-left: 20vh;
-    font-size: 1.5rem;
 }
 
 .div-p-desporto p:nth-child(1),.div-p-desporto p:nth-child(3),.div-p-desporto p:nth-child(5),.div-p-desporto p:nth-child(7){
@@ -897,7 +870,6 @@ body{
 .btn-cadastrar{
     width: 30vw;
     left: 40vw;
-    font-size: 1.3rem;
 }
 
 #section-formas-de-pagamento-p{
@@ -973,6 +945,7 @@ body{
     top: 74vh;
 }
 
+
 .section-notificacoes{
     display: none;
 }
@@ -1025,6 +998,7 @@ body{
     display: none;
 }
 
+
 .footer{
     background-color:#000;
     width: 100vw;
@@ -1052,7 +1026,7 @@ body{
 
 .div-gps-img{
     position: absolute;
-    left: 32vw;
+    left: 30.5vw;
     top: 4.5vh;
     width: 5vw;
     height: 5vh;
@@ -1060,10 +1034,10 @@ body{
 
 .p-gps{
     position: absolute;
-    left: 38.5vw;
+    left: 38vw;
     top: 5.5vh;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .div-facebook-icon,.div-instagram-img,.div-linkedin-img{
@@ -1081,10 +1055,8 @@ body{
     width: 20vw;
     border-radius: 0.8vw;
     right: 8vw;
+   
 }
 
-.p-direitos-reservados{
-    font-size: 1.3rem;
-}
 
 }    
