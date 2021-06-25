@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/universal.css">
     <link rel="stylesheet" href="../css/normalize/normalize.css">
-    <link rel="stylesheet" href="../css/sign-up.css">
     <link rel="stylesheet" href="../css/firstPage.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>lssport - Pagina Principal</title>
 </head>
 
@@ -39,11 +39,11 @@
                 <a href="#" class="menu-link">
                     <li class="menu-item">Home</li>
                 </a>
-                <a href="HTML/posts.html" class="menu-link">
+                <a href="admin/user-profile.html" class="menu-link">
                     <li class="menu-item">Conta</li>
                 </a>
-                <a href="HTML/about.html" class="menu-link">
-                    <li class="menu-item">Configurações</li>
+                <a href="../html/boas-vindas.html" class="menu-link">
+                    <li class="menu-item">Terminar</li>
                 </a>
             </ul>
 
@@ -51,11 +51,11 @@
                 <a href="#" class="menu-link">
                     <li class="menu-item">Home</li>
                 </a>
-                <a href="HTML/posts.html" class="menu-link">
+                <a href="admin/user-profile.html" class="menu-link">
                     <li class="menu-item">Conta</li>
                 </a>
-                <a href="HTML/about.html" class="menu-link">
-                    <li class="menu-item">Configurações</li>
+                <a href="../html/boas-vindas.html" class="menu-link">
+                    <li class="menu-item">Terminar</li>
                 </a>
             </ul>
         </nav>
@@ -68,49 +68,20 @@
                 Últimos<br>Destaques
             </h1>
             <ul class="list">
-                <li class="list-item nav active">Futebol</li>
-                <li class="list-item nav">Automobilismo</li>
-                <li class="list-item nav">Atletismo</li>
+                <li class="list-item nav active" @click="changeCurrentNews">Futebol</li>
+                <li class="list-item nav" @click="changeCurrentNews">Automobilismo</li>
+                <li class="list-item nav" @click="changeCurrentNews">Atletismo</li>
             </ul>
 
             <section id="updates-container">
-                <div class="updates-container--update flex-column-section">
-                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
+                
+                <div v-for="post in news[actualNewsTab]" class="updates-container--update flex-column-section">
+                    <img :src="post.imageUrl" alt=""
                         class="updates-container--update-img">
-                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
+                    <h2 class="updates-container--update-title">{{ post.title }}</h2>
                 </div>
 
-                <div class="updates-container--update flex-column-section">
-                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
-                        class="updates-container--update-img">
-                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
-                </div>
-
-                <div class="updates-container--update flex-column-section">
-                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
-                        class="updates-container--update-img">
-                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
-                </div>
-
-                <div class="updates-container--update flex-column-section">
-                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
-                        class="updates-container--update-img">
-                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
-                </div>
-
-                <div class="updates-container--update flex-column-section">
-                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
-                        class="updates-container--update-img">
-                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
-                </div>
-
-                <div class="updates-container--update flex-column-section">
-                    <img src="../img/outras-img/pexels-andrea-piacquadio-3775140.jpg" alt=""
-                        class="updates-container--update-img">
-                    <h2 class="updates-container--update-title">Bayer passou o caminhão no Barça 8 x 2</h2>
-                </div>
-
-                <button class="see-more-updates-button see-more-button">ver mais</button>
+                <button v-if="news[actualNewsTab].length > 6" class="see-more-updates-button see-more-button">ver mais</button>
             </section>
         </section>
 
@@ -158,6 +129,7 @@
         </section>
     </div>
     <script src="../js/mobileMenuAction.js"></script>
+    <script src="../js/firstPage.js"></script>
 </body>
 
 </html>

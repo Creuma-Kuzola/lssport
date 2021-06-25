@@ -33,6 +33,7 @@
 .text-white-color {
     color: #fff;
 }
+
 .menu-mobile {
     display: none;
 }
@@ -80,7 +81,7 @@
     width: 8vw;
     color: #FFFAFA;
     border-radius: 0;
-   font-weight: bold;
+    font-weight: bold;
 }
 
 .list-item {
@@ -151,7 +152,6 @@
     background-color: #FF3A41;
     color: #fff;
     border: none;
-
 }
 
 .flex-column-section {
@@ -252,9 +252,12 @@
     .updates-container--update {
         margin: 5rem 0rem 0rem 0;
         position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .flex-column-section {
         flex-direction: column;
+        width: 95%;
     }
     .menu-hamburguer {
         position: absolute;
@@ -331,5 +334,14 @@
     .highlights-items {
         position: relative;
         width: 100%;
+        display: inline-block;
+    }
+    .active {
+        background-color: white;
+        color: #00B1FF;
+        width: auto;
+    }
+    .highlights-image {
+        width: 100%
     }
 }
