@@ -227,7 +227,7 @@ body{
     height:50vh;
     grid-auto-flow: column;
     position: absolute;
-    top: 100vh;
+    top: 68vh;
 }
 
 .noticias-desportivas{
@@ -379,10 +379,33 @@ body{
 .section-formas-de-pagamento-item-div--img-div-title{
     font-size: 1.6rem;
     font-weight: bolder;
-    position: absolute;
-    top: 11vh;
     margin-left: 3vh;
     color:#ff3946 ;
+}
+
+
+.section-formas-de-pagamento-item-div--img-div-title1 , .section-formas-de-pagamento-item-div--img-div-title2, .section-formas-de-pagamento-item-div--img-div-title3{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-left: 3vh;
+    color:#ff3946 ;
+}
+
+.section-formas-de-pagamento-item-div--img-div-title1{
+    position: absolute;
+    top: 11vh;
+    color: #ff3946;
+}
+
+.section-formas-de-pagamento-item-div--img-div-title2{
+    position: absolute;
+    top: 11vh;
+    color: #fff;
+}
+
+.section-formas-de-pagamento-item-div--img-div-title3{
+    position: absolute;
+    top: 11vh;
 }
 
 .title-2{
@@ -395,6 +418,7 @@ body{
     text-align: justify;
 
 }
+
 
 .section-notificacoes{
     display: grid;
@@ -817,7 +841,7 @@ body{
     height:50vh;
     grid-auto-flow: column;
     position: absolute;
-    top: 70vh;
+    top: 100vh;
 }
 
 .esquerda-red-div{
@@ -856,7 +880,7 @@ body{
     place-items: center;
     margin-left: 10vh;
     position: absolute;
-    top: 120vh;
+    top: 160vh;
 }
 
 .div-p-desporto p{
@@ -884,7 +908,7 @@ body{
 }
 
 .section-formas-de-pagamento-item{
-    position: absolute;
+    position: relative;
     top: 304vh;
     display: grid;
     grid-template-columns: 0;
@@ -931,7 +955,7 @@ body{
 
 .section-formas-de-pagamento-item-div--img-div-title1{
     position: absolute;
-    top: 3vh;
+    top: 5vh;
 }
 
 .section-formas-de-pagamento-item-div--img-div-title2{
