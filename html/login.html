@@ -52,7 +52,7 @@
             const userNameInput = document.querySelector('input[name="user-name"]').value;
             const userPassword = document.querySelector('input[name="user-password"]').value;
 
-            if (userNameInput == 'root' && userPassword == 'root') {
+            if (userNameInput == 'root' && userPassword == 'root' || userNameInput == 'creuma kuzola' && userPassword == 'ck') {
                 window.location.replace('admin/home.html');
             } else {
                 if (userNameInput == 'ricardo' && userPassword == 'ricardol1') {
